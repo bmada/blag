@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+$brand-color:           #2a7ae2 !default;
+$brand-color-light:     lighten($brand-color, 40%) !default;
+$brand-color-dark:      darken($brand-color, 25%) !default;
+
+$site-title-color:      $brand-color-dark !default;
+
+$text-color:            #111111 !default;
+$background-color:      #fdfdfd !default;
+$code-background-color: #fdfdfd !default;
+
+$link-base-color:       #2a7ae2 !default;
+$link-visited-color:    darken($link-base-color, 15%) !default;
+$link-hover-color:      $text-color !default;
+
+$border-color-01:       $brand-color-light !default;
+$border-color-02:       lighten($brand-color, 35%) !default;
+$border-color-03:       $brand-color-dark !default;
+
+$table-text-color:      lighten($text-color, 18%) !default;
+$table-zebra-color:     lighten($brand-color, 46%) !default;
+$table-header-bg-color: lighten($brand-color, 43%) !default;
+$table-header-border:   lighten($brand-color, 37%) !default;
+$table-border-color:    $border-color-01 !default;
+
+
+// Syntax highlighting styles should be adjusted appropriately for every "skin"
+// ----------------------------------------------------------------------------
+
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+
+pre, code, .highlight {
+  background: #fff;
+  font-family: "Fira Code", Consolas, 'Courier New', Courier, monospace;
+  @extend %vertical-rhythm;
+
+  pre, code, .highlighter-rouge & {
+    background-color: #fff;
+  }
+}
+
+/* Base 16 */
+
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #303030;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #999;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #f4bf75;
+  font-weight: bold;
+}
+.highlight .cs {
+  font-weight: bold;
+}
+.highlight .ge {
+  color: #f4bf75;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #d28445;
+}
+.highlight .go {
+  color: #f4bf75;
+}
+.highlight .gp {
+  color: #f4bf75;
+}
+.highlight .gs {
+  color: #f4bf75;
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #f4bf75;
+}
+.highlight .gt {
+  color: #f4bf75;
+}
+.highlight .bp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .o {
+  color: #aa759f;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+  font-weight: bold;
+}
+.highlight .kc {
+  color: #d28445;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+  font-weight: bold;
+}
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}
+.highlight .nb {
+  color: #0086B3; /* github */
+}
+.highlight .nd {
+  color: #d28445;
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #d28445;
+}
+.highlight .ne {
+  color: #d28445;
+  font-weight: bold;
+}
+.highlight .nf, .highlight .fm {
+  color: #d28445;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #f4bf75;
+  font-weight: bold;
+}
+.highlight .vc {
+  color: #f4bf75;
+}
+.highlight .vg {
+  color: #d28445;
+}
+.highlight .vi {
+  color: #d28445;
+}
+.highlight .nv, .highlight .vm {
+  color: #d28445;
+}

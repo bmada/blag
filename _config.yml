@@ -1,0 +1,31 @@
+title: bmada
+author:
+  name: Ben Madafiglio
+  email: b@madafiglio.com
+description: >
+  Thanks for coming
+
+show_excerpts: true
+
+permalink: pretty
+
+remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-paginate-v2
+
+exclude:
+  - Makefile
+
+collections:
+  glossary:
+    output: true
+
+minima:
+  skin: blue
+  date_format: "%B %-d, %Y"
+
+pagination:
+  enabled: true
