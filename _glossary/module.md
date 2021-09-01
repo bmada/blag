@@ -75,7 +75,7 @@ Adding $$ -\vec{m} $$ to both sides completes the proof. ∎
 
 <div markdown="1" class="box">
 ## Example
-Every commutative group $$ G $$ is naturally a $$ \mathbf{Z} $$-module, where the scalar multiplication $$ \mathbf{Z} \times M \to M $$ is given by
+Every commutative group $$ G $$ is naturally a $$ \mathbf{Z} $$-module, where the scalar multiplication $$ \mathbf{Z} \times G \to G $$ is $$ n $$-times addition defined by
 
 $$ ng = \begin{cases}
 g + g + \cdots + g, & n > 0;\\

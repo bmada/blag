@@ -286,7 +286,7 @@ a.anchor:hover {
 }
 
 .cards code.highlighter-rouge {
-    background-color: lighten($brand-color, 40%);
+    border-color: $text-color;
 }
 
 span.mjx-chtml.MJXc-display {
@@ -305,6 +305,16 @@ table.thin {
 	margin-right: auto;
 	text-align: right;
 }
+
+pre, code, .highlight {
+	background: #fff;
+	font-family: "Fira Code", Consolas, 'Courier New', Courier, monospace;
+	font-size: 0.75rem;
+
+	pre, code, .highlighter-rouge & {
+	  background-color: #fff;
+	}
+  }
 
 
 /* Footnotes */
