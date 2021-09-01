@@ -173,6 +173,11 @@ li {
 	padding-left: 0.25rem;
 }
 
+ul.post-list li > ul,
+ul.post-list li > ol {
+	margin-bottom: $spacing-unit / 2;
+}
+
 span.graffiti {
 	float: right;
     margin-right: -10.2rem;
