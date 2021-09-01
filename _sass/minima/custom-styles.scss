@@ -204,7 +204,9 @@ div.box {
     padding: 0 $spacing-unit / 2 $spacing-unit / 2 $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
 
-	p:last-child {
+	p:last-child,
+	ol:last-child,
+	ul:last-child {
 		margin-bottom: 0;
 	}
 
@@ -291,6 +293,17 @@ span.mjx-chtml.MJXc-display {
 	width: 100%;
 	overflow-y: hidden;
 	overflow-x: auto;
+}
+
+table tr:nth-child(odd) {
+	background-color: $background-color;
+}
+
+table.thin {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
 }
 
 
