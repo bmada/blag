@@ -42,7 +42,7 @@ are there? What if there are more objects, say
 
 </div>
 
-With four objects, it turns out there are exactly 15. For the general case, there is a way to determine both how many partitions and what they are.
+With four objects it turns out there are exactly 15. For the general case, there is a way to determine both how many partitions and what they are.
 
 ## Up to four elements
 
@@ -79,7 +79,7 @@ If $$k = 2$$, then there is only one prepartition that can be partitioned $$B_2 
 
 {:start="3"}
 3. `♢` ‖ `♣` `♡` → `♢` \| `♣` `♡`
-4. <span style="visibility: hidden;">`♢` ‖ `♣` `♡`</span> → `♢` \| `♣` \| `♡`
+4. <span class="hidden hint"><span>`♢` ‖ `♣` `♡`</span></span> → `♢` \| `♣` \| `♡`
 
 Similarly, if $$k = 0$$ then all elements are in the same subject so there's only one prepartition that can be partitioned in only one way. Note that this agrees with $$B_0 = 1$$.
 
@@ -115,11 +115,11 @@ If $$k = 2$$, there are $$\binom{3}{2} = 3$$ prepartitions that can be partition
 
 {:start="5"}
 5. `♢` `♣` ‖ `♡` `♠` → `♢` `♣` \| `♡` `♠`
-6. <span style="visibility: hidden;">`♢` `♣` ‖ `♡` `♠`</span> → `♢` `♣` \| `♡` \| `♠`
+6. <span class="hidden hint"><span>`♢` `♣` ‖ `♡` `♠`</span></span> → `♢` `♣` \| `♡` \| `♠`
 7. `♢` `♡` ‖ `♣` `♠` → `♢` `♡` \| `♣` `♠`
-8. <span style="visibility: hidden;">`♢` `♡` ‖ `♣` `♠`</span> → `♢` `♡` \| `♣` \| `♠`
+8. <span class="hidden hint"><span>`♢` `♡` ‖ `♣` `♠`</span></span> → `♢` `♡` \| `♣` \| `♠`
 9. `♢` `♠` ‖ `♣` `♡` → `♢` `♠` \| `♣` `♡`
-10. <span style="visibility: hidden;">`♢` `♠` ‖ `♣` `♡`</span> → `♢` `♠` \| `♣` \| `♡`
+10. <span class="hidden hint"><span>`♢` `♠` ‖ `♣` `♡`</span></span> → `♢` `♠` \| `♣` \| `♡`
 
 If $$k = 3$$, there is $$\binom{3}{3} = 1$$ prepartition that can be partitioned in $$B_3 = 5$$ ways. This prepartition is
 
@@ -130,10 +130,10 @@ Here, we could use the partitions of the three element set that we found earlier
 
 {:start="11"}
  11. `♢` ‖ `♣` `♡` `♠` → `♢` ‖ `♣` `♡` `♠` ‖ → `♢` \| `♣` `♡` `♠`
- 12. <span style="visibility: hidden;">`♢` ‖ `♣` `♡` `♠`</span> → `♢` ‖ `♣` `♡` ‖ `♠`  → `♢` \| `♣` `♡` \| `♠`
- 13. <span style="visibility: hidden;">`♢` ‖ `♣` `♡` `♠`</span> → `♢` ‖ `♣` `♠` ‖ `♡`  → `♢` \| `♣` `♠` \| `♡`
- 14. <span style="visibility: hidden;">`♢` ‖ `♣` `♡` `♠`</span> → `♢` ‖ `♣` ‖ `♡` `♠`  → `♢` \| `♣` \| `♡` `♠`
- 15. <span style="visibility: hidden;">`♢` ‖ `♣` `♡` `♠` → `♢` ‖ `♣` ‖ `♡` `♠`</span>  → `♢` \| `♣` \| `♡` \| `♠`
+ 12. <span class="hidden hint"><span>`♢` ‖ `♣` `♡` `♠`</span></span> → `♢` ‖ `♣` `♡` ‖ `♠`  → `♢` \| `♣` `♡` \| `♠`
+ 13. <span class="hidden hint"><span>`♢` ‖ `♣` `♡` `♠`</span></span> → `♢` ‖ `♣` `♠` ‖ `♡`  → `♢` \| `♣` `♠` \| `♡`
+ 14. <span class="hidden hint"><span>`♢` ‖ `♣` `♡` `♠`</span></span> → `♢` ‖ `♣` ‖ `♡` `♠`  → `♢` \| `♣` \| `♡` `♠`
+ 15. <span class="hidden hint"><span>`♢` ‖ `♣` `♡` `♠` → `♢` ‖ `♣` ‖ `♡` `♠`</span></span>  → `♢` \| `♣` \| `♡` \| `♠`
 
 That's it! We have proved that $$ B_4 = 15 $$ and listed all 15 partitions.
 
@@ -142,12 +142,12 @@ That's it! We have proved that $$ B_4 = 15 $$ and listed all 15 partitions.
 <div class="box red" markdown=1>
 ## Theorem
 
-The number of ways to partition an $$ n $$-element set
+Let $$ n $$ be a positive integer. The number of ways to partition an $$ n $$-element set
 
 `1` `2` `3` … <code class="highlighter-rouge"><i>n</i> − 1</code> _`n`_
 {: .center}
 
-is $$ B_n $$, where
+is $$ B_n $$, where $$ B_0 = 1 $$ and
 
 $$B_{n} = \binom{n - 1}{0} B_{0} + \binom{n - 1}{1} B_{1} + \cdots + \binom{n - 1}{n - 1} B_{n - 1} = \sum_{k=0}^{n-1} \binom{n - 1}{k} B_{k}.$$
 
@@ -189,45 +189,55 @@ Here is a more systematic way to generate set partitions that does not require f
 <div class="box" markdown=1>
 ## Algorithm (Set Partitions)
 
-The input is an $$ n $$-element set
+The input is an $$ n $$-element set such as
 
 `1` `2` `3` … <code class="highlighter-rouge"><i>n</i> − 1</code> _`n`_.
 {: .center}
 
-If the input is the singleton set `1`, then return the partition `1`.
+If the input is a singleton set, then the set itself is the partition so return it. For example, given the set _`n`_, return the partition _`n`_.
 
-Otherwise, remove the last element _`n`_ and partition the remaining elements
 
-`1` `2` `3` … <code class="highlighter-rouge"><i>n</i> − 1</code>
+Otherwise, remove and store the last element _`k`_ and recursively partition the remaining elements
+
+`1` `2` `3` … <code class="highlighter-rouge"><i>k</i> − 1</code>.
 {: .center}
 
-recursively. For each recursively generated partition, create and return new partitions given by:
+For each recursively generated partition, create and return new partitions given by:
 
-- Inserting _`n`_ into each subset (separately) of the recursively generated partition. For example when adding `4` to the recursively generated partition `1` `3` \| `2`, two output partitions are generated.
-    - `1` `3` \| `2` → `1` `3` `4` \| `2`
-    - <span style="visibility: hidden;">`1` `3` \| `2`</span> → `1` `3` \| `2` `4`
-- Inserting _`n`_ into its own new subset with the rest of the partition. For example
-    - `1` `3` \| `2` → `1` `3` \| `2` \| `4`
+1. Inserting the stored element _`k`_ into each subset of the recursively generated partition. For example, when adding _`k`_ to the partition
+    
+    `1` \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code>
+    {: .center}
+
+    the output partitions are
+    - `1` \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code>  → `1` **_`k`_** \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code>
+    - <span class="hidden hint"><span>`1` \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code></span></span> → `1` \| `2` **_`k`_** \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code>
+    - <span class="hidden hint"><span>`1` \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code></span></span> → `1` \| `2` \| `3` **_`k`_** \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code>
+    - <span class="hidden hint"><span>`1` \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code></span></span> → …
+    - <span class="hidden hint"><span>`1` \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code></span></span> → `1` \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code>  **_`k`_**
+
+2. Inserting the stored element _`k`_ into its own new subset with the rest of the partition. For example
+    - <span class="hidden hint"><span>`1` \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code></span></span> → `1` \| `2` \| `3` \| … \| <code class="highlighter-rouge"><i>k</i> − 1</code> \| **_`k`_**
 
 </div>
 
 Applied to the set `♢` `♣` `♡` `♠`, the logic of the algorithm is summarised in the list below.
 
 1. `♢` → `♢` `♣` → `♢` `♣` `♡` → `♢` `♣` `♡` `♠`
-2. <span style="visibility: hidden;">`♢` → `♢` `♣` → `♢` `♣` `♡` </span>→ `♢` `♣` `♡` \| `♠`
-3. <span style="visibility: hidden;">`♢` → `♢` `♣`  </span>→ `♢` `♣` \| `♡` → `♢` `♣` `♠` \| `♡`
-4. <span style="visibility: hidden;">`♢` → `♢` `♣`  → `♢` `♣` \| `♡` </span>→ `♢` `♣` \| `♡` `♠`
-5. <span style="visibility: hidden;">`♢` → `♢` `♣`  → `♢` `♣` \| `♡` </span>→ `♢` `♣` \| `♡` \| `♠`
-6. <span style="visibility: hidden;">`♢` </span>→ `♢` \| `♣` → `♢` `♡` \| `♣` → `♢` `♡` `♠` \| `♣`
-7. <span style="visibility: hidden;">`♢` → `♢` \| `♣` → `♢` `♡` \| `♣` </span>→ `♢` `♡` \| `♣` `♠`
-8. <span style="visibility: hidden;">`♢` → `♢` \| `♣` → `♢` `♡` \| `♣` </span>→ `♢` `♡` \| `♣` \| `♠`
-9. <span style="visibility: hidden;">`♢` → `♢` \| `♣` </span>→ `♢` \| `♣` `♡` → `♢` `♠`\| `♣` `♡`
-0. <span style="visibility: hidden;">`♢` → `♢` \| `♣` → `♢` \| `♣` `♡` </span>→ `♢` \| `♣` `♡` `♠`
-1. <span style="visibility: hidden;">`♢` → `♢` \| `♣` → `♢` \| `♣` `♡` </span>→ `♢` \| `♣` `♡` \| `♠`
-2. <span style="visibility: hidden;">`♢` → `♢` \| `♣` </span>→ `♢` \| `♣` \| `♡` → `♢` `♠` \| `♣` \| `♡`
-3. <span style="visibility: hidden;">`♢` → `♢` \| `♣` → `♢` \| `♣` \| `♡` </span>→ `♢` \| `♣` `♠` \| `♡`
-4. <span style="visibility: hidden;">`♢` → `♢` \| `♣` → `♢` \| `♣` \| `♡` </span>→ `♢` \| `♣` \| `♡` `♠`
-5. <span style="visibility: hidden;">`♢` → `♢` \| `♣` → `♢` \| `♣` \| `♡` </span>→ `♢` \| `♣` \| `♡` \| `♠`
+2. <span class="hidden hint"><span>`♢` → `♢` `♣` → `♢` `♣` `♡` </span></span>→ `♢` `♣` `♡` \| `♠`
+3. <span class="hidden hint"><span>`♢` → `♢` `♣`  </span></span>→ `♢` `♣` \| `♡` → `♢` `♣` `♠` \| `♡`
+4. <span class="hidden hint"><span>`♢` → `♢` `♣`  → `♢` `♣` \| `♡` </span></span>→ `♢` `♣` \| `♡` `♠`
+5. <span class="hidden hint"><span>`♢` → `♢` `♣`  → `♢` `♣` \| `♡` </span></span>→ `♢` `♣` \| `♡` \| `♠`
+6. <span class="hidden hint"><span>`♢` </span></span>→ `♢` \| `♣` → `♢` `♡` \| `♣` → `♢` `♡` `♠` \| `♣`
+7. <span class="hidden hint"><span>`♢` → `♢` \| `♣` → `♢` `♡` \| `♣` </span></span>→ `♢` `♡` \| `♣` `♠`
+8. <span class="hidden hint"><span>`♢` → `♢` \| `♣` → `♢` `♡` \| `♣` </span></span>→ `♢` `♡` \| `♣` \| `♠`
+9. <span class="hidden hint"><span>`♢` → `♢` \| `♣` </span></span>→ `♢` \| `♣` `♡` → `♢` `♠` \| `♣` `♡`
+0. <span class="hidden hint"><span>`♢` → `♢` \| `♣` → `♢` \| `♣` `♡` </span></span>→ `♢` \| `♣` `♡` `♠`
+1. <span class="hidden hint"><span>`♢` → `♢` \| `♣` → `♢` \| `♣` `♡` </span></span>→ `♢` \| `♣` `♡` \| `♠`
+2. <span class="hidden hint"><span>`♢` → `♢` \| `♣` </span></span>→ `♢` \| `♣` \| `♡` → `♢` `♠` \| `♣` \| `♡`
+3. <span class="hidden hint"><span>`♢` → `♢` \| `♣` → `♢` \| `♣` \| `♡` </span></span>→ `♢` \| `♣` `♠` \| `♡`
+4. <span class="hidden hint"><span>`♢` → `♢` \| `♣` → `♢` \| `♣` \| `♡` </span></span>→ `♢` \| `♣` \| `♡` `♠`
+5. <span class="hidden hint"><span>`♢` → `♢` \| `♣` → `♢` \| `♣` \| `♡` </span></span>→ `♢` \| `♣` \| `♡` \| `♠`
 
 </div>
 

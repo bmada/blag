@@ -289,6 +289,20 @@ a.anchor:hover {
     border-color: $text-color;
 }
 
+span.hidden span {
+	visibility: hidden;
+}
+
+span.hidden.hint:hover span {
+	visibility: visible;
+	color: $text-color-light;
+	border-color: $text-color-light;
+
+	code.highlighter-rouge {
+		border-color: $text-color-light;
+	}
+}
+
 span.mjx-chtml.MJXc-display {
 	width: 100%;
 	overflow-y: hidden;
