@@ -33,7 +33,7 @@ The group is referred to as $$ G $$ or more formally, $$ (G, *) $$.
 [^2]: This element is necessarily unique. Suppose $$ e $$ and $$ e' $$ are identity elements, then $$ e = e * e' = e' $$ by definition.
 
 <div markdown="1" class="box">
-## Example (Additive Group of Integers)
+## Example (additive group of integers)
 
 The set of integers $$ \mathbf{Z} = \{ \ldots, -2, -1, 0, 1, 2, \ldots \} $$ together with standard addition $$ + $$ forms a group $$ (\mathbf{Z}, +) $$.
 </div>
@@ -78,7 +78,7 @@ All other groups with two elements have a direct correspondence to this group th
 </div>
 
 <div class="box" markdown="1">
-## Example (General Linear Group)
+## Example (general linear group)
 The set of all real invertible 2 by 2 matrices
 
 $$ \biggl\{ \begin{bmatrix}a&b\\c&d\end{bmatrix} \in \text{M}_2(\mathbf{R}) : ad \ne bc \biggr\} $$
@@ -105,7 +105,7 @@ equipped with function composition $$ \circ $$. We can identify $$ \text{GL}_n(\
 </div>
 
 <div class="box" markdown="1">
-## Example (Multiplicative Group of Integers)
+## Example (multiplicative group of integers)
 Let $$ \mathbf{Z}_n = \{ 0, 1, 2, \ldots, n - 1 \} $$ and define
 
 $$ \mathbf{Z}_n^* = \{ a \in \mathbf{Z}_n : \operatorname{gcd}(a, n) = 1 \}. $$
@@ -126,7 +126,7 @@ The identity element is $$ 1 \in \mathbf{Z}_n^* $$. Finally, every element $$ a 
 </div>
 
 <div class="box" markdown="1">
-## Example (Symmetric Group)
+## Example (symmetric group)
 Suppose $$ S = \{ 1, 2, \ldots, n \} $$ and let
 
 $$ S_n = \{ \sigma \colon S \to S : \text{$\sigma$ is a bijection} \} $$
