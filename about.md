@@ -13,7 +13,15 @@ Here we are, written in [Jekyll](https://jekyllrb.com/) using a (quite heavily) 
 
 ## Blogroll
 
- - [https://krasjet.com/](https://krasjet.com/), particularly [https://krasjet.com/rnd.wlk/](https://krasjet.com/rnd.wlk/)
- - [https://bearskinrug.co.uk/](https://bearskinrug.co.uk/)
- - [https://cjolowicz.github.io/](https://cjolowicz.github.io/)
- - [https://yugeten.github.io/](https://yugeten.github.io/)
+{% if site.data.blogroll %}
+<ul>
+    {% for blogroll in site.data.blogroll %}
+    <li>
+    <a href="{{ blogroll.url }}" rel="external">
+    <h3>{{ blogroll.title }}</h3>
+    </a>
+    {{ blogroll.comment | markdownify }}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
