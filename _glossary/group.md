@@ -28,7 +28,7 @@ that satisfies the following conditions:
 
     $$ g * g^{-1} = g^{-1} * g = e. $$
 
-The group is referred to as $$ G $$ or more formally, $$ (G, *) $$.
+The group is referred to as $$ G $$, or more formally, $$ (G, *) $$.
 
 [^2]: This element is necessarily unique. Suppose $$ e $$ and $$ e' $$ are identity elements, then $$ e = e * e' = e' $$ by definition.
 
@@ -52,7 +52,7 @@ If the group operation is commutative, that is, $$ g * h = h * g $$ for all grou
 
 A **multiplicative group** usually has group operation $$ \times $$ or $$ \cdot $$ with identity $$ 1 $$, and the inverse of $$ g $$ is written $$ g^{-1} $$. The multiplication $$ g \times h  $$ or $$ g \cdot h $$ is often abbreviated $$ gh $$, and the $$n$$-times product is denoted $$ g \times g \times \cdots \times g = g^n $$.
 
-An **additive group** is commutative and the group operation is usually written $$ + $$. The identity is written $$ 0 $$ and the inverse of $$ g $$ is $$ -g $$, with $$ g + (-h) $$ abbreviated to $$ g - h $$. The $$ n $$-times addition is denoted $$ g + g + \cdots + g = ng $$.
+An **additive group**{: #additive-group} is commutative and the group operation is usually written $$ + $$. The identity is written $$ 0 $$ and the inverse of $$ g $$ is $$ -g $$, with $$ g + (-h) $$ abbreviated to $$ g - h $$. The $$ n $$-times addition is denoted $$ g + g + \cdots + g = ng $$.
 
 The **order** $$ \vert G \vert $$ of a group $$ (G, *) $$ is the number of elements in the set $$ G $$. If $$ \vert G \vert < \infty $$, then $$ (G, *) $$ is a **finite group**.
 
