@@ -32,11 +32,11 @@ that satisfies the following conditions:
 
 <!--span class="graffiti">Multiplicative inverses are not required.</span-->
 
-The ring is referred to as $$ R $$, or more formally as the triple $$ (R, +, \times) $$, where the multiplication map
+The ring is referred to as $$ R $$. More formally, the multiplication symbol can be made explicit
 
-$$ (r, s) \longmapsto r \times s $$
+$$ (r, s) \longmapsto r \times s, $$
 
-can be expressed more explicitly.
+so that the ring refers to the triple $$ (R, +, \times) $$.
 
 If the ring multiplication is commutative, that is, $$ rs = sr $$ for all $$ r, s \in R $$, then $$ R $$ is a **commutative ring**.
 
@@ -299,3 +299,4 @@ where $$ k $$ is a positive integer. ∎
 [field]: {{ site.url }}/glossary/field/
 [module]: {{ site.url }}/glossary/module/
 [submodule]: {{ site.url }}/glossary/submodule/
+

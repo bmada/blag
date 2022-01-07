@@ -23,3 +23,27 @@
   url: https://martinheinz.dev/
 - title: Amelia Wattenberger
   url: https://wattenberger.com/blog
+- title: Nicholas Pilkington
+  url: https://nickp.svbtle.com/
+- title: moll.dev
+  url: https://www.moll.dev/
+- title: Refined Blog
+  url: https://refined.blog/
+  comment: Quite a collection of of blogs.
+- title: Copper
+  url: https://alinpanaitiu.com/blog/
+- title: phiresky's blog
+  url: https://phiresky.netlify.app/blog/
+- title: machow.ski
+  url: https://www.machow.ski/
+  comment: Crypto and fintech.
+- title: Interactive Linear Algebra
+  url: http://textbooks.math.gatech.edu/ila/index.html
+  comment: A book not a blog but I can't resist.
+- title: tinyblog
+  url: https://www.tinyblog.dev/
+  comment: Books are nice.
+- title: levels.io
+  url: https://levels.io/blog/
+  comment: Different to [www.levels.fyi](www.levels.fyi) (which is also good).
+

@@ -13,6 +13,8 @@ Here we are, written in [Jekyll](https://jekyllrb.com/) using a (quite heavily) 
 
 ## Blogroll
 
+Sites that I find interesting or want to keep for later. Probably too many to be useful.
+
 {% if site.data.blogroll %}
 <ul>
     {% for blogroll in site.data.blogroll %}
@@ -25,3 +27,4 @@ Here we are, written in [Jekyll](https://jekyllrb.com/) using a (quite heavily) 
     {% endfor %}
 </ul>
 {% endif %}
+
