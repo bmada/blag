@@ -17,7 +17,8 @@ Sites that I find interesting or want to keep for later. Probably too many to be
 
 {% if site.data.blogroll %}
 <ul>
-    {% for blogroll in site.data.blogroll %}
+    {% assign blogrolls = site.data.blogroll | sort: 'title' %}
+    {% for blogroll in blogrolls %}
     <li>
     <a href="{{ blogroll.url }}" rel="external">
     <h3>{{ blogroll.title }}</h3>
@@ -27,4 +28,3 @@ Sites that I find interesting or want to keep for later. Probably too many to be
     {% endfor %}
 </ul>
 {% endif %}
-
