@@ -146,7 +146,7 @@ A **division ring** is a nonzero ring where every nonzero element has a multipli
 
 $$ r r^{-1} = r^{-1} r = 1. $$
 
-A commutative division ring is a **field**.
+A **field** is a commutative division ring.
 
 <div class="box" markdown=1>
 ## Example

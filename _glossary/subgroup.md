@@ -26,7 +26,7 @@ also forms a chain of subgroups under addition $$ + $$.
 
 <div markdown="1" class="box green">
 ## Proposition
-A nonempty subset $$ H \subseteq G $$ is a subgroup if and only if
+Let $$ (G, *) $$ be a group. A nonempty subset $$ H \subseteq G $$ is a subgroup if and only if
 
 1. $$ H $$ is closed; if $$ h, k \in H $$, then
 
