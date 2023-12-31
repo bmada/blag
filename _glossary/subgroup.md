@@ -16,6 +16,12 @@ $$ H $$ is said to be a subgroup of $$ G $$ and is denoted $$ H \leq G $$.
 ## Example
 
 Any group $$ (G, *) $$ with identity element $$ e $$ has two trivial subgroups: $$ G $$ and $$ {e} $$.
+
+The chain of inclusions
+
+$$ \mathbf{Z} \subseteq \mathbf{Q} \subseteq \mathbf{R} \subseteq \mathbf{C} $$
+
+also forms a chain of subgroups under addition $$ + $$.
 </div>
 
 <div markdown="1" class="box green">
@@ -27,6 +33,20 @@ A nonempty subset $$ H \subseteq G $$ is a subgroup if and only if
     $$ h * k \in H. $$
 
 2. $$ H $$ is closed under inverses; for any $$ h \in H $$, then $$ h^{-1} \in H $$.
+</div>
+
+<div markdown="1" class="box">
+## Example (additive subgroups of integers)
+
+The set of even integers $$ 2\mathbf{Z} = \{\ldots, -4, -2, 0, 2, 4, \ldots \} $$ is a subgroup of the set of integers under addition, $$ (\mathbf{Z}, +) $$.
+
+Given two elements $$ 2n, 2m \in 2\mathbf{Z} $$ where $$ n, m \in \mathbf{Z} $$, we have $$ 2n + 2m = 2(n+m) \in 2\mathbf{Z} $$ since $$ n + m \in \mathbf{Z} $$, and $$ -2n = 2(-n) \in 2\mathbf{Z} $$ since $$ -n \in \mathbf{Z} $$.
+
+More generally for a positive integer $$ n $$, the subsets
+
+$$ n\mathbf{Z} = \{\ldots, -2n, -n, 0, n, 2n, \ldots\} \subseteq \mathbf{Z} $$
+
+form subgroups of $$ (\mathbf{Z}, +) $$. Every non-trivial subgroup of $$ (\mathbf{Z}, +) $$ is of this form.
 </div>
 
 <div class="box" markdown="1">
